@@ -1,0 +1,37 @@
+﻿ESP32-P4C5 六代屏幕 · 版本说明
+
+版本号采用四段格式 MAJOR.MINOR.PATCH.BUILD。
+
+| 组件 | 版本 | 大小 | 构建时间 |
+| --- | --- | --- | --- |
+| 设备端固件 | 1.2.0.7 (build 7) | 1208992 字节 | 2026-10-07T23:48:20 |
+| SimHub 插件 | 1.2.0.7 (build 7) | 117248 字节 | 2026-09-30T12:39:20 |
+
+固件与插件配套发布，请成对使用，不要只更新其中一个。
+
+本版本为半成品开源，以下功能尚未实现：
+
+- 开机背景图上传功能尚未实现。开机画面固定使用固件内置图片，
+  无法通过插件替换。
+- 无线桥接功能尚未实现，请使用有线 USB 连接。
+
+文件清单：
+
+| 文件 | 说明 |
+| --- | --- |
+| FlashGen6.exe | 刷机工具，内置刷写运行库 |
+| firmware\firmware.g6e | 固件包，由刷机工具写入设备 |
+| SimHub插件\SimHubWiFiBridgeGen6.dll | SimHub 插件，复制进安装目录 |
+| 刷机教程.txt | 刷机、插件安装、功能说明与引脚对应表 |
+| README.md | 项目说明 |
+| docs\ | 使用说明、常见问题与引脚说明 |
+| LICENSE | 许可条款 |
+| 版本说明.txt | 本文件 |
+
+校验值（SHA256）：
+
+| 文件 | SHA256 |
+| --- | --- |
+| firmware\firmware.g6e | 4B108B6F016922955D67EA1EF4F8902FF8FA9FFE62DA63C84FC117347702CB1C |
+| FlashGen6.exe | AC7FD6DCF4C1252E11F1A8D7B5940047C7712921B3EF8A07FC1B1EA8509F2068 |
+| SimHub插件\SimHubWiFiBridgeGen6.dll | 4CDA58EAA71417EAE39168D398C1A39B0F49AE51178A83B38D1FA6B74B4590D2 |

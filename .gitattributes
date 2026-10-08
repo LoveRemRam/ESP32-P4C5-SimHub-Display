@@ -1,0 +1,12 @@
+﻿# 二进制文件，避免文本差异与换行转换
+*.exe   binary
+*.dll   binary
+*.bin   binary
+*.g6e   binary
+*.enc   binary
+
+# 文本文件统一为 LF 存档
+* text=auto eol=lf
+*.ps1   text eol=crlf
+*.bat   text eol=crlf
+*.cmd   text eol=crlf

@@ -1,0 +1,17 @@
+﻿# 构建与临时产物
+build/
+obj/
+bin/
+*.tmp
+*.log
+
+# 编辑器与系统文件
+.vs/
+.vscode/
+.idea/
+Thumbs.db
+desktop.ini
+
+# 刷写运行库的本地展开目录
+runtime/
+*.zip
